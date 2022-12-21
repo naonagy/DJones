@@ -1,0 +1,143 @@
+@import "bootstrap";
+//Menu bar
+header{
+    background-color: #182D42;    
+    color: #fff !important; 
+}
+.navbar
+{
+    background-color:  #182D42 !important;
+    padding: 0px;
+    font-size: 22px;
+}
+//contact
+.bi{
+    -webkit-text-size-adjust: auto;
+}
+.offcanvas .nav-item
+{
+    text-align: center;
+}
+.offcanvas
+{
+    background-color: #b0bdca;
+}
+.offcanvas-header{
+    color: #182D42;
+}
+.nb:hover{
+    box-shadow: none !important;
+}
+body
+{
+    background-color: #b0bdca;
+}
+//backgorund-color
+.bck{
+    background-color: #b0bdca;
+}
+.bck *{
+    background-color: #b0bdca;
+}
+.bckg{
+    background-color: #182D42;
+}
+#logo
+{
+    border-radius: 15px;
+    width: 125px;
+    height: 125px;
+}
+//linia de separator la titluri
+.separator 
+{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #001830;
+}
+
+.separator::before,
+.separator::after 
+{
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #000;
+}
+
+.separator:not(:empty)::before 
+{
+    margin-right: .25em;
+}
+
+.separator:not(:empty)::after 
+{
+    margin-left: .25em;
+}
+.switch 
+{
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+//footer
+footer
+{
+    background-color: #637282;
+    margin-top: 0;
+}
+footer *
+{
+    background-color: #637282;
+}
+#copyright
+{
+    background-color: #182D42;
+    color: #faebd7;
+}
+#statistici
+{
+    color: #faebd7;
+    background-color: #001830;
+}
+#statistici *
+{
+    color: #faebd7;
+    background-color: #001830;
+}
+//responsiveness pentru header
+@media only screen and (max-width: 992px) 
+{
+    #headbar
+    {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .bi
+    {
+        visibility: hidden;
+        display: none !important;
+    }
+}
+@media only screen and (min-width: 768px)
+{
+    .offnav{
+        visibility: hidden !important;
+        display: none !important;
+    }
+}
+@media only screen and (max-width: 768px)
+{
+    .bi
+    {
+        visibility: hidden !important;
+        display: none !important;
+    }
+    #headbar
+    {
+        flex-direction: row !important;
+        justify-content: space-evenly !important;
+    }
+}
+

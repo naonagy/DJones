@@ -1,0 +1,267 @@
+@import "bootstrap";
+body
+{
+    background-color: #b0bdca;
+}
+//Menu bar
+header{
+    background-color: #182D42;    
+    color: #fff !important; 
+}
+.navbar
+{
+    background-color:  #182D42 !important;
+    padding: 0px;
+    font-size: 22px;
+}
+//contact
+.bi{
+    -webkit-text-size-adjust: auto;
+}
+.offcanvas .nav-item
+{
+    text-align: center;
+}
+.offcanvas
+{
+    background-color: #b0bdca;
+}
+.offcanvas-header{
+    color: #182D42;
+}
+.nb:hover{
+    box-shadow: none !important;
+}
+
+#logo
+{
+    border-radius: 15px;
+    width: 125px;
+    height: 125px;
+}
+
+
+form
+{
+    border-radius: 10px;
+}
+//backgorund-color
+.bck
+{
+    background-color: #b0bdca;
+}
+.bck *
+{
+    background-color: #b0bdca;
+}
+
+//footer
+footer
+{
+    background-color: #637282;
+    margin-top: 0;
+}
+footer *
+{
+    background-color: #637282;
+}
+#copyright
+{
+    background-color: #182D42;
+    color: #faebd7;
+}
+
+//formular
+
+.ctn //container formular
+{
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+
+}
+
+
+fieldset
+{
+    display:none;
+    box-shadow:6px 6px 40px 1px gray;
+    background-color: #001830;
+    margin: 0px auto;
+    font-family: Raleway;
+    padding: 40px;
+    border: solid #182D42;
+    border-radius: 10px;
+
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+
+
+}
+#first //primul fieldset
+{
+    display:block;
+    box-shadow:6px 6px 40px 1px gray;
+    background-color: #001830;
+    margin: 0px auto;
+    font-family: Raleway;
+    padding: 40px;
+    border: solid #182D42;
+    border-radius: 10px
+}
+//campurile formularului
+input[type=text],input[type=number],select
+{
+    width:100%;
+    margin:10px 0;
+    height:40px;
+    border:2px solid #3c4c5c;
+    border-radius:4px;
+    padding: 10px;
+    font-size: 17px;
+}
+//next si submit button
+.fbtn
+{
+    background-color: #182D42;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: Raleway;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.fbtn:hover 
+{
+    opacity: 0.8
+}
+//previous button
+.pbtn{
+    background-color: #637282;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: Raleway;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.pbtn:hover 
+{
+    opacity: 0.8
+}
+
+//linia de separator la titluri
+.separator 
+{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #001830;
+}
+    
+.separator::before,
+.separator::after 
+{
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #000;
+}
+
+.separator:not(:empty)::before 
+{
+    margin-right: .25em;
+}
+
+.separator:not(:empty)::after 
+{
+    margin-left: .25em;
+}
+
+//ratingul 
+.rate 
+{
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.ctn input[type="radio"] 
+{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+.rate:not(:checked) > label 
+{
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before 
+{
+    content: '★ ';
+}
+.rate > input:checked ~ label 
+{
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label 
+{
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label 
+{
+    color: #c59b08;
+}
+
+
+//responsiveness pentru header
+
+@media only screen and (max-width: 992px) 
+{
+    #headbar
+    {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .bi
+    {
+        visibility: hidden;
+        display: none !important;
+    }
+}
+@media only screen and (min-width: 768px)
+{
+    .offnav{
+        visibility: hidden !important;
+        display: none !important;
+    }
+}
+@media only screen and (max-width: 768px)
+{
+    .bi
+    {
+        visibility: hidden !important;
+        display: none !important;
+    }
+    #headbar
+    {
+        flex-direction: row !important;
+        justify-content: space-evenly !important;
+    }
+}
+

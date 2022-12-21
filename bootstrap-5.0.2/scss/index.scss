@@ -1,0 +1,253 @@
+@import "bootstrap";
+*{
+    background-color: #182D42;
+    color: white;
+}
+body
+{
+    background-color: #182D42;
+}
+.navbar
+{
+    padding: 0px;
+    font-size: 22px;
+}
+
+#logo
+{
+    border-radius: 15px;
+    width: 125px;
+    height: 125px;
+}
+
+.offcanvas .nav-item
+{
+    text-align: center;
+}
+
+//animatie elemente navbar
+.nb:hover{
+    box-shadow: none !important;
+}
+
+//introducere
+h1
+{
+    font-style: italic;
+}
+h2
+{
+    font-size: large;
+}
+#secondbox
+{
+    h2{
+        background-color: #b0bdca;
+        color: #212529 !important;
+    }
+    p{
+        background-color: #b0bdca;
+        color: #212529 !important;
+    }
+    background-color: #b0bdca;
+}
+#thirdbox
+{
+    h2{
+        background-color: #b0bdca;
+        color: #212529 !important;
+    }
+    p{
+        background-color: #b0bdca;
+        color: #212529 !important;
+    }
+    background-color: #b0bdca;
+}
+
+//statistici
+#statistici
+{
+    background-color: #b0bdca;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+#statistici *
+{
+    background-color: #b0bdca;
+}
+#statistici div
+{
+    height: inherit;
+}
+#semicircle
+{
+    padding: 0em;
+    margin: 0;
+    left: 50%;
+    width: 200px;
+    border-radius: 0 150px 150px 0px;    height: inherit;
+}
+#semicircle *
+{
+    background-color: #212529 !important;
+    overflow: hidden;
+    width: fit-content;
+    border-radius: inherit;
+}
+#semicircle h3
+{
+    text-align: center;
+}
+
+//slider
+.slider
+{
+    margin-bottom: 0 !important;
+}
+.bx-wrapper
+{
+    left: 0;
+    box-shadow: none;
+    border: none;
+    background-color: transparent !important;
+    border: transparent !important;
+}
+.bx-pager
+{
+    padding: 0 !important;
+}
+
+.slider img
+{
+    max-height: 100vh;
+    width: 100%;
+}
+
+.slidertext
+{
+    position:absolute;
+    bottom:0px;
+    background-color: rgba(0,0,0,0.4);width:100%;text-align: center;
+
+}
+
+//carduri
+.card{
+    background-color: #182D42; 
+    color: white;
+    border: transparent;
+}
+
+//menu bar contact info
+.bi{
+    -webkit-text-size-adjust: auto;
+}
+
+//footer
+footer
+{
+    background-color: #b0bdca;
+    margin-top: 0;
+}
+footer *
+{
+    background-color: #b0bdca;
+}
+#copyright
+{
+    background-color: #637282;
+}
+
+
+@media only screen and (min-width: 1024px) 
+{
+    .card-img-top 
+    {
+        width: 300px;
+        height: 300px;
+    }
+   }
+@media only screen and (max-width: 992px) 
+{
+    #headbar
+    {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .bi
+    {
+        visibility: hidden;
+        display: none !important;
+    }
+    #semicircle
+    {
+        border-radius: 0 0px 150px 150px !important;  
+        min-width: 300px;
+        min-height: 150px;
+        h3{
+            overflow: visible;
+        }
+    }
+}
+@media only screen and (min-width: 768px)
+{
+    .offnav{
+        visibility: hidden !important;
+        display: none !important;
+    }
+}
+@media only screen and (max-width: 768px)
+{
+    .bi
+    {
+        visibility: hidden !important;
+        display: none !important;
+    }
+    #headbar
+    {
+        flex-direction: row !important;
+        justify-content: space-evenly !important;
+    }
+    #thirdbox
+    {
+        background-color: #212529;
+        border: 0px solid transparent !important;
+        h2
+        {
+            background-color: #212529 !important;
+            color: #fff !important;
+        }
+        p{
+            background-color: #212529;
+            color: #fff !important;
+        }
+        button{
+            color: #f8f9fa;
+            border-color: #f8f9fa;
+        }
+    }
+    #fourthbox
+    {   
+        background-color: #b0bdca !important;
+        border: 1px solid #dee2e6 !important;
+
+        h2
+        {
+            background-color: #b0bdca !important;
+            color: #212529 !important;
+        }
+        p
+        {
+            background-color: #b0bdca !important;
+            color: #212529 !important;
+        }
+        
+        button
+        {
+            color: #6c757d;
+            border-color: #6c757d;
+        }
+    }
+    
+}
